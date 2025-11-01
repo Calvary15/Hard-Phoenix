@@ -35,6 +35,7 @@
     walkModifier: 0.9
     sprintModifier: 0.9
   - type: HLClothingWhitelist # Only borgs may equip this item on their head slot
+    denyReason: hl-clothing-whitelist-cyborg-denied
     whitelist:
       components:
       - BorgChassis
