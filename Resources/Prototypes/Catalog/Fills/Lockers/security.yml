@@ -32,6 +32,7 @@
 #    - id: WeaponDisabler # Frontier
     - id: WeaponEnergyRevolver # HL
     - id: NFWeaponEnergySubMachineGunDisabler # HL
+    - id: WeaponTaser
     - id: ClothingBeltSecurityFilled
     - id: Flash
     - id: ClothingEyesGlassesSecurity
@@ -84,6 +85,7 @@
 #    - id: WeaponDisabler # Frontier
     - id: WeaponEnergyRevolver # HL
     - id: NFWeaponEnergySubMachineGunDisabler # HL
+    - id: WeaponTaser
     - id: ClothingUniformJumpsuitSecGrey
       prob: 0.3
     - id: ClothingHeadHelmetBasic
@@ -121,6 +123,7 @@
 #    - id: WeaponDisabler # Frontier
     - id: WeaponEnergyRevolver # HL
     - id: NFWeaponEnergySubMachineGunDisabler # HL
+    - id: WeaponTaser
     - id: TrackingImplanter
     - id: TrackingImplanter
 #    - id: ClothingOuterHardsuitBrigmedic # HL: Moved to HLFillHardsuitBrigmedic
