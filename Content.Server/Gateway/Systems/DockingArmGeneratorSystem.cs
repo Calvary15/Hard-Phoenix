@@ -37,7 +37,7 @@ public sealed class DockingArmGeneratorSystem : EntitySystem
     [Dependency] private readonly SharedPopupSystem _popup = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
 
-    [ValidatePrototypeId<LocalizedDatasetPrototype>]
+    // Optional name dataset - will fall back to default names if not found
     private const string DockingArmNames = "names_borer";
 
     private static readonly string[] DefaultDockingArmNames = new[]
