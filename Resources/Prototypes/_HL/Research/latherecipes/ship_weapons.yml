@@ -1,7 +1,7 @@
 ﻿#ship parts
 - type: latheRecipe
   id: LightShipWeaponFrame
-  result: LightShipWeaponFrame1
+  result: MaterialLightShipWeaponFrame1
   completetime: 30
   materials:
     Steel: 5000
@@ -10,7 +10,7 @@
 
 - type: latheRecipe
   id: LightShipWeaponServo
-  result: LightShipWeaponServo1
+  result: MaterialLightShipWeaponServo1
   completetime: 30
   materials:
     Steel: 2500
@@ -20,7 +20,7 @@
 
 - type: latheRecipe
   id: LightShipWeaponInternal
-  result: LightShipWeaponInternal1
+  result: MaterialLightShipWeaponInternal1
   completetime: 30
   materials:
     Steel: 1000
@@ -32,7 +32,7 @@
 
 - type: latheRecipe
   id: MediumShipWeaponFrame
-  result: MediumShipWeaponFrame1
+  result: MaterialMediumShipWeaponFrame1
   completetime: 30
   materials:
     Steel: 10000
@@ -41,7 +41,7 @@
 
 - type: latheRecipe
   id: MediumShipWeaponServo
-  result: MediumShipWeaponServo1
+  result: MaterialMediumShipWeaponServo1
   completetime: 30
   materials:
     Steel: 5000
@@ -51,7 +51,7 @@
 
 - type: latheRecipe
   id: MediumShipWeaponInternal
-  result: MediumShipWeaponInternal1
+  result: MaterialMediumShipWeaponInternal1
   completetime: 30
   materials:
     Steel: 2000
@@ -63,7 +63,7 @@
 
 - type: latheRecipe
   id: HeavyShipWeaponFrame
-  result: HeavyShipWeaponFrame1
+  result: MaterialHeavyShipWeaponFrame1
   completetime: 30
   materials:
     Steel: 15000
@@ -72,7 +72,7 @@
 
 - type: latheRecipe
   id: HeavyShipWeaponServo
-  result: HeavyShipWeaponServo1
+  result: MaterialHeavyShipWeaponServo1
   completetime: 30
   materials:
     Steel: 7500
@@ -82,7 +82,7 @@
 
 - type: latheRecipe
   id: HeavyShipWeaponInternal
-  result: HeavyShipWeaponInternal1
+  result: MaterialHeavyShipWeaponInternal1
   completetime: 30
   materials:
     Steel: 3000
@@ -94,7 +94,7 @@
 
 - type: latheRecipe
   id: CapitalShipWeaponFrame
-  result: CapitalShipWeaponFrame1
+  result: MaterialCapitalShipWeaponFrame1
   completetime: 30
   materials:
     Steel: 20000
@@ -103,7 +103,7 @@
 
 - type: latheRecipe
   id: CapitalShipWeaponServo
-  result: CapitalShipWeaponServo1
+  result: MaterialCapitalShipWeaponServo1
   completetime: 30
   materials:
     Steel: 10000
@@ -113,7 +113,7 @@
 
 - type: latheRecipe
   id: CapitalShipWeaponInternal
-  result: CapitalShipWeaponInternal1
+  result: MaterialCapitalShipWeaponInternal1
   completetime: 30
   materials:
     Steel: 4000

@@ -33,8 +33,8 @@
   id: LightShuttleWeapons
   name: research-technology-light-shuttle-weapons
   icon:
-    sprite: _Mono/Objects/ShuttleWeapons/50cal.rsi
-    state: icon
+    sprite: _HL/Logo/shuttle_armament_research_t1.rsi
+    state: T1
   discipline: Arsenal
   tier: 1
   cost: 30000
@@ -48,8 +48,8 @@
   id: MediumShuttleWeapons
   name: research-technology-medium-shuttle-weapons
   icon:
-    sprite: _Mono/Objects/ShuttleWeapons/rac-30_draupnir.rsi
-    state: icon
+    sprite: _HL/Logo/shuttle_armament_research_t2.rsi
+    state: T2
   discipline: Arsenal
   tier: 2
   cost: 60000
@@ -75,8 +75,8 @@
   id: HeavyShuttleWeapons
   name: research-technology-heavy-shuttle-weapons
   icon:
-    sprite: _Mono/Objects/ShuttleWeapons/tarnyx.rsi
-    state: icon
+    sprite: _HL/Logo/shuttle_armament_research_t3.rsi
+    state: T3
   discipline: Arsenal
   tier: 3
   cost: 90000
@@ -92,8 +92,8 @@
   id: CapitalShuttleWeapons
   name: research-technology-capital-shuttle-weapons
   icon:
-    sprite: _Mono/Objects/ShuttleWeapons/charon.rsi
-    state: icon
+    sprite: _HL/Logo/shuttle_armament_research_t4.rsi
+    state: T4
   discipline: Arsenal
   tier: 3
   cost: 120000

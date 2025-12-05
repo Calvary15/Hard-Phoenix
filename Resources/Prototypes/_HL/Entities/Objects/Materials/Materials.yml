@@ -475,7 +475,7 @@
   parent: MaterialBase
   id: MaterialCapitalShipWeaponServo
   name: capital ship structure servo
-  description: A machine servo for acapital ship structure.
+  description: A machine servo for a capital ship structure.
   suffix: Full
   components:
   - type: ConstructionMaterials # Frontier
