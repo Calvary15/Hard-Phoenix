@@ -41,7 +41,7 @@
   canBeAntag: false
   icon: JobIconSalvageBorg
   supervisors: job-supervisors-Quartermaster
-  jobEntity: PlayerBorgQuadSalv
+  jobEntity: PlayerBorgQuadsalv
 
 - type: job
   id: SecurityQuadBorg

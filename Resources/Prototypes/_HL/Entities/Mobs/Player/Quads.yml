@@ -15,7 +15,7 @@
         name: power-cell-slot-component-slot-name-default
         startingItem: PowerCellMedium
   - type: RandomMetadata
-    nameSegments: [names_borg]
+    nameSegments: [NFNamesBorg]
 
 - type: entity
   id: PlayerBorgQuadmed
@@ -36,7 +36,7 @@
         name: power-cell-slot-component-slot-name-default
         startingItem: PowerCellMedium
   - type: RandomMetadata
-    nameSegments: [names_borg]
+    nameSegments: [NFNamesBorg]
     
 - type: entity
   id: PlayerBorgQuadsalv
@@ -55,7 +55,7 @@
         name: power-cell-slot-component-slot-name-default
         startingItem: PowerCellMedium
   - type: RandomMetadata
-    nameSegments: [names_borg]
+    nameSegments: [NFNamesBorg]
 
 - type: entity
   id: PlayerBorgQuadEngineer
@@ -76,7 +76,7 @@
         name: power-cell-slot-component-slot-name-default
         startingItem: PowerCellMedium
   - type: RandomMetadata
-    nameSegments: [names_borg]
+    nameSegments: [NFNamesBorg]
     
 - type: entity
   id: PlayerBorgQuad
@@ -98,4 +98,4 @@
         name: power-cell-slot-component-slot-name-default
         startingItem: PowerCellMedium
   - type: RandomMetadata
-    nameSegments: [names_borg]
+    nameSegments: [NFNamesBorg]
