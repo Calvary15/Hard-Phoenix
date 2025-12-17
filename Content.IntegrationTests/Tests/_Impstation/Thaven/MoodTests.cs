@@ -53,6 +53,10 @@ public sealed class ThavenMoodTests
     e: ThreeValueSet
 ";
 
+    private static readonly ProtoId<DatasetPrototype> ThreeValueSetId = "ThreeValueSet";
+    private static readonly ProtoId<ThavenMoodPrototype> DuplicateTestId = "DuplicateTest";
+    private static readonly ProtoId<ThavenMoodPrototype> DuplicateOverlapTestId = "DuplicateOverlapTest";
+
     [Test]
     [Repeat(10)]
     public async Task TestDuplicatePrevention()
@@ -67,8 +71,8 @@ public sealed class ThavenMoodTests
 
         await server.WaitAssertion(() =>
         {
-            var dataset = protoMan.Index<DatasetPrototype>("ThreeValueSet");
-            var moodProto = protoMan.Index<ThavenMoodPrototype>("DuplicateTest");
+            var dataset = protoMan.Index<DatasetPrototype>(ThreeValueSetId);
+            var moodProto = protoMan.Index<ThavenMoodPrototype>(DuplicateTestId);
 
             var datasetSet = dataset.Values.ToHashSet();
             var mood = thavenSystem.RollMood(moodProto);
@@ -93,8 +97,8 @@ public sealed class ThavenMoodTests
 
         await server.WaitAssertion(() =>
         {
-            var dataset = protoMan.Index<DatasetPrototype>("ThreeValueSet");
-            var moodProto = protoMan.Index<ThavenMoodPrototype>("DuplicateOverlapTest");
+            var dataset = protoMan.Index<DatasetPrototype>(ThreeValueSetId);
+            var moodProto = protoMan.Index<ThavenMoodPrototype>(DuplicateOverlapTestId);
 
             var datasetSet = dataset.Values.ToHashSet();
             var mood = thavenSystem.RollMood(moodProto);

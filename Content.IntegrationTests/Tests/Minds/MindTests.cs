@@ -144,7 +144,9 @@ public sealed partial class MindTests
         await server.WaitAssertion(() =>
         {
             var damageable = entMan.GetComponent<DamageableComponent>(entity);
-            if (!protoMan.TryIndex<DamageTypePrototype>("Blunt", out var prototype))
+            private static readonly ProtoId<DamageTypePrototype> BluntProtoId = "Blunt";
+
+            if (!protoMan.TryIndex<DamageTypePrototype>(BluntProtoId, out var prototype))
             {
                 return;
             }
