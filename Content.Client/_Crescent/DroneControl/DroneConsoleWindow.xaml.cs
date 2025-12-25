@@ -47,7 +47,7 @@ public sealed partial class DroneConsoleWindow : FancyWindow, IComputerWindow<Dr
     public void UpdateState(DroneConsoleBoundUserInterfaceState state)
     {
         NavRadar.UpdateState(state.NavState);
-        NavRadar.UpdateState(state.IFFState);
+        // Note: IFF state is not used by NavRadar control
 
         // Rebuild list if changed (Naive approach, usually we differ)
         // For simplicity, we clear and rebuild if count matches but we don't check names.

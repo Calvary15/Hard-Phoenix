@@ -6,6 +6,9 @@ using Content.Server.Shuttles.Systems;
 using Content.Shared._Crescent.DroneControl;
 using Content.Shared.DeviceNetwork;
 using Content.Shared.DeviceNetwork.Components;
+using Content.Shared.DeviceNetwork.Events;
+using Content.Shared.Shuttles.BUIStates;
+using Content.Shared.Shuttles.Components;
 using Robust.Shared.Map;
 using System.Numerics;
 
@@ -46,7 +49,12 @@ public sealed class DroneControlSystem : EntitySystem
     private void UpdateState(EntityUid uid, DroneControlConsoleComponent comp, DeviceListComponent devList)
     {
         var nav = _shuttleConsole.GetNavState(uid, _shuttleConsole.GetAllDocks());
-        var iff = _shuttleConsole.GetIFFState(uid, null);
+        // Note: IFF state not available - would need to be implemented
+        var iffState = new IFFConsoleBoundUserInterfaceState
+        {
+            AllowedFlags = IFFFlags.None,
+            Flags = IFFFlags.None
+        };
 
         var drones = new List<NetEntity>();
 
@@ -58,7 +66,7 @@ public sealed class DroneControlSystem : EntitySystem
             drones.Add(GetNetEntity(device));
         }
 
-        _ui.SetUiState(uid, DroneConsoleUiKey.Key, new DroneConsoleBoundUserInterfaceState(nav, iff, drones));
+        _ui.SetUiState(uid, DroneConsoleUiKey.Key, new DroneConsoleBoundUserInterfaceState(nav, iffState, drones));
     }
 
     private void OnMoveMsg(EntityUid uid, DroneControlConsoleComponent component, DroneConsoleMoveMessage args)

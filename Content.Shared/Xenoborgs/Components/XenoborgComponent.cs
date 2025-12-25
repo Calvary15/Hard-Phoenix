@@ -1,4 +1,4 @@
-using Content.Shared.Roles.Components;
+using Content.Shared.Roles;
 using Robust.Shared.Audio;
 using Robust.Shared.Prototypes;
 

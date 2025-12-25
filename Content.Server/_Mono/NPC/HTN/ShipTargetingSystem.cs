@@ -1,5 +1,3 @@
-using Content.Server.PointCannons;
-using Content.Shared.PointCannons;
 using Content.Shared.Weapons.Ranged.Components;
 using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
@@ -12,7 +10,6 @@ namespace Content.Server._Mono.NPC.HTN;
 public sealed partial class ShipTargetingSystem : EntitySystem
 {
     [Dependency] private readonly EntityLookupSystem _lookup = default!;
-    [Dependency] private readonly PointCannonSystem _cannon = default!;
     [Dependency] private readonly SharedPhysicsSystem _physics = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
 
@@ -107,7 +104,8 @@ public sealed partial class ShipTargetingSystem : EntitySystem
 
             targetPos += leadBy * hitTime;
 
-            _cannon.TryFireCannon(uid, targetPos, gun: gun);
+            // TODO: Re-implement when PointCannonSystem is available
+            // _cannon.TryFireCannon(uid, targetPos, gun: gun);
         }
     }
 
@@ -134,13 +132,14 @@ public sealed partial class ShipTargetingSystem : EntitySystem
 
         if (checkGuns)
         {
-            ent.Comp.Cannons.Clear();
-            var cannons = new HashSet<Entity<PointCannonComponent>>();
-            _lookup.GetLocalEntitiesIntersecting(shipUid.Value, grid.LocalAABB, cannons);
-            foreach (var cannon in cannons)
-            {
-                ent.Comp.Cannons.Add(cannon);
-            }
+            // TODO: Re-implement cannon checking when PointCannonComponent is available
+            // ent.Comp.Cannons.Clear();
+            // var cannons = new HashSet<Entity<PointCannonComponent>>();
+            // _lookup.GetLocalEntitiesIntersecting(shipUid.Value, grid.LocalAABB, cannons);
+            // foreach (var cannon in cannons)
+            // {
+            //     ent.Comp.Cannons.Add(cannon);
+            // }
         }
 
         return ent.Comp;

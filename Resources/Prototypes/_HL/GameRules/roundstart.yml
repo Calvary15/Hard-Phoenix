@@ -22,7 +22,9 @@
     rules:
     - id: Thief
       prob: 0.5
-    - id: SubWizard
+    #- id: SubWizard
+    #  prob: 0.05
+    - id: Xenoborgs
       prob: 0.05
 
 - type: entity
@@ -497,7 +499,7 @@
     - id: BluespaceVaultError
     - id: BluespaceVaultSmallError
     - id: BluespaceSyndicateFTLInterception
-    - id: BluespaceWizardFederationScout
+    #- id: BluespaceWizardFederationScout
     - id: BluespaceBloodMoon
 
 - type: entity

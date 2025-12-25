@@ -1,4 +1,3 @@
-using Content.Shared.Crescent.Radar;
 using Content.Shared.Shuttles.BUIStates;
 using Robust.Shared.Serialization;
 using System.Numerics;
@@ -33,14 +32,14 @@ public sealed partial class DroneControlComponent : Component
 public sealed class DroneConsoleBoundUserInterfaceState : BoundUserInterfaceState
 {
     public NavInterfaceState NavState;
-    public IFFInterfaceState IFFState;
+    public IFFConsoleBoundUserInterfaceState IFFState;
 
     // Key: NetEntity of the drone, Value: Name
     public List<NetEntity> LinkedDrones;
 
     public DroneConsoleBoundUserInterfaceState(
         NavInterfaceState navState,
-        IFFInterfaceState iffState,
+        IFFConsoleBoundUserInterfaceState iffState,
         List<NetEntity> linkedDrones)
     {
         NavState = navState;

@@ -96,6 +96,6 @@ public sealed partial class XenoborgSystem : EntitySystem
 
     private void OnXenoborgMindRemoved(EntityUid ent, XenoborgComponent comp, MindRemovedMessage args)
     {
-        _roles.MindRemoveRole(args.Mind.Owner, comp.MindRole);
+        _roles.MindRemoveRole<MindRoleComponent>((args.Mind.Owner, args.Mind.Comp));
     }
 }

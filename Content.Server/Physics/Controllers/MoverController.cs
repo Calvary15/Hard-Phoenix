@@ -126,7 +126,8 @@ public sealed class MoverController : SharedMoverController
             PhysicsComponent? body;
             var xformMover = xform;
 
-            if (mover.ToParent && RelayQuery.HasComponent(xform.ParentUid))
+            // Check if we should move the parent instead (for relays)
+            if (RelayQuery.HasComponent(xform.ParentUid))
             {
                 if (!PhysicsQuery.TryGetComponent(xform.ParentUid, out body) ||
                     !XformQuery.TryGetComponent(xform.ParentUid, out xformMover))
@@ -141,12 +142,7 @@ public sealed class MoverController : SharedMoverController
                 continue;
             }
 
-            HandleMobMovement(uid,
-                mover,
-                physicsUid,
-                body,
-                xformMover,
-                frameTime);
+            HandleMobMovement((uid, mover), frameTime);
         }
 
         HandleShuttlePilot(frameTime);
