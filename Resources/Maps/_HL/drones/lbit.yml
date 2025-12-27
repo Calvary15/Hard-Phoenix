@@ -4,8 +4,8 @@ meta:
   engineVersion: 267.3.0
   forkId: ""
   forkVersion: ""
-  time: 12/26/2025 21:36:23
-  entityCount: 34
+  time: 12/27/2025 07:22:58
+  entityCount: 35
 maps: []
 grids:
 - 1
@@ -152,6 +152,13 @@ entities:
     components:
     - type: Transform
       pos: 2.5,2.5
+      parent: 1
+- proto: ClothingBackpackRogueSiliconT4
+  entities:
+  - uid: 35
+    components:
+    - type: Transform
+      pos: 3.498722,2.1950297
       parent: 1
 - proto: GeneratorRTG
   entities:
