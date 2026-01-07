@@ -229,3 +229,9 @@ Entries:
       message: Fire spreading when entities are colliding now works properly.
   id: 26
   time: '2026-01-07T04:28:11.0000000+00:00'
+- author: Wuffindy
+  changes:
+    - type: Fix
+      message: upgraded backpacks grid should be fixed now
+  id: 27
+  time: '2026-01-07T04:30:34.0000000+00:00'
